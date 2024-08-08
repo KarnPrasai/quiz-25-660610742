@@ -19,6 +19,7 @@ interface PostOwnnerProps {
 export type { PostOwnnerProps };
 
 interface CommentProps {
+    key : string;
     userImagePath : string;
     username : string;
     commentText : string
