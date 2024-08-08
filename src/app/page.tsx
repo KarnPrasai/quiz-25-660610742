@@ -5,7 +5,7 @@ import { PostOwnnerProps } from "@/libs/types";
 import Comment from "@/components/Comment";
 import { CommentProps } from "@/libs/types";
 import { comments } from "@/libs/comments";
-import { useState } from "react";
+
 
 export default function Home() {
 
@@ -36,7 +36,7 @@ export default function Home() {
         {/* map-loop render Comment component here */}
         {comments.map((comments : any) =>
          <Comment 
-         key = {comments.username}
+         key = {comments.userImagePath}
          userImagePath={comments.userImagePath} 
          username={comments.username} 
          commentText={comments.commentText} 
